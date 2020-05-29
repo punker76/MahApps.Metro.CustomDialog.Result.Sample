@@ -9,10 +9,15 @@
                  Height="600"
                  mah:DialogParticipation.Register="{Binding}"
                  mc:Ignorable="d">
-  <Grid>
-    <Button HorizontalAlignment="Center"
-            VerticalAlignment="Center"
+  <StackPanel HorizontalAlignment="Center"
+              VerticalAlignment="Center"
+              Orientation="Vertical">
+    <Button Margin="0 2"
             Command="{Binding OpenDialogCommand}"
-            Content="Open a dialog..." />
-  </Grid>
+            Content="Open custom dialog ..." />
+
+    <Button Margin="0 2"
+            Command="{Binding OpenSecondDialogCommand}"
+            Content="Open custom dialog with UserControl ..." />
+  </StackPanel>
 </mah:MetroWindow>
